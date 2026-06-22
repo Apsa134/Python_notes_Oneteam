@@ -1,71 +1,71 @@
 # #Example 1
-# def greet(name,age):
-# 	print(f"Hi {name}")
+def greet(name,age):
+	print(f"Hi {name} am {age} years old")
 
 # #example 2
-# def even(num):
-# 	if(num%2 ==0):
-# 		print(f"{num}Even number")
-# 	else:
-# 		print(f"{num}Odd number")
-# even(7)
+def even(num):
+	if(num%2 ==0):
+		print(f"{num}Even number")
+	else:
+		print(f"{num}Odd number")
+even(7)
 
 # #example 3
-# def prime(num):
-# 	for i in range(2,(num//2)+1):
-# 		if(num%i==0):
-# 			print(f"{num} Not prime ")
-# 			break
-# 	else:
-# 		print(f"{num} is prime number")
-# prime(23)
+def prime(num):
+	for i in range(2,(num//2)+1):
+		if(num%i==0):
+			print(f"{num} Not prime ")
+			break
+	else:
+		print(f"{num} is prime number")
+prime(23)
 
 # #keyword
 # #default keyword
-# def greet(name,age,place = "Alappuzha"):
-# 	print(f"Hi,i am {name}..am {age} years old")
-# 	if place:
-# 		print(f"am from {place}")
+def greet(name,age,place = "Alappuzha"):
+	print(f"Hi,i am {name}..am {age} years old")
+	if place:
+		print(f"am from {place}")
 
-# greet("Biona",21,'kottayam')
-# greet("Apsa",22)
+greet("Biona",21,'kottayam')
+greet("Apsa",22)
 
 #  *args
 
-# def add(*args):
-# 	sum =0
-# 	for i in args:
-# 		sum +=i
-# 	print(sum)
+def add(*args):
+	sum =0
+	for i in args:
+		sum +=i
+	print(sum)
 
-# add(1,3,5,7,9)
+add(1,3,5,7,9)
 
 # store values as dictionary and we can pass so many arguments
-# def greet(**args):
-# 	print(args["name"])
+def greet(**args):
+	print(args["name"])
 
-# greet(name = "apsa", age = 22, place = "alappuzha")
+greet(name = "apsa", age = 22, place = "alappuzha")
 
 #return 
 
-# def add(*args):
-# 	sum =0
-# 	for i in args:
-# 		sum +=i
-# 	return (sum)
+def add(*args):
+	sum =0
+	for i in args:
+		sum +=i
+	return (sum)
 
-# s = add(1,3,5,7,9)
-# print(s)
+s = add(1,3,5,7,9)
+print(s)
 
 #reccursion
 
-# def fact(n):
-# 	if(n==1):
-# 		return n
-# 	else:
-# 		return n*fact(n-1)
+def fact(n):
+	if(n==1):
+		return n
+	else:
+		return n*fact(n-1)
 	
-# print("Factorial :",fact(4))
+print("Factorial :",fact(4))
 
 #Fibonacci using reccursion
 
