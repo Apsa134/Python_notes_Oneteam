@@ -1,0 +1,17 @@
+numb = [10,3,50,7,9]
+
+# n = list(map(lambda num:num%5==0,numb))
+# print(n)
+n = list(filter(lambda num:num%5==0,numb))  #it shows only the values which give true boolean operators
+print(n)
+
+
+#for reducing the steps
+#SUM
+from functools import reduce
+sum = reduce(lambda a,b:a+b,numb)
+print(sum)
+
+#factorial
+fact = reduce(lambda a,b:a*b,range(1,6))
+print(fact)
