@@ -27,6 +27,7 @@ print(list2.index(2))
 
 
 #pop
+#can use pop in print..it display the deleted element
 
 list2.pop()
 print(list2)#remove the last element from the list
